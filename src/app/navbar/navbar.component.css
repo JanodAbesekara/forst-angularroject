@@ -1,0 +1,14 @@
+nav
+{
+  height:20px;
+  width: 100%;
+}
+ul{
+  display: flex;
+  float: inline-end;
+
+}
+
+li{
+  padding-right: 30px;
+}
