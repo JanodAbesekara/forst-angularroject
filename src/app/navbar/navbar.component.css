@@ -1,14 +1,20 @@
-nav
-{
-  height:20px;
-  width: 100%;
-}
-ul{
+ul {
+  position: relative;
+  bottom: 100px;
   display: flex;
   float: inline-end;
-
+  list-style: none;
 }
-
-li{
+li {
   padding-right: 30px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+#nh1 {
+  width: 100%;
+  background-color: blue;
+  height: 50px;
+  color: white;
 }
