@@ -1,12 +1,14 @@
 <div id="nh1">
-  <h1>My Website</h1>
-  <nav>
-  <ul>
-    <li><a routerLink="/"  >Home</a></li>
-    <li><a routerLink="/About">About me</a></li>
-    <li><a routerLink="/contact" >Contact me</a></li>
-  </ul>
-</nav>
+  <h1>My Portfolio</h1>
+
+  <mat-icon>menu</mat-icon>
+  <div [class.mobile_menu]="menuValue">
+    <nav>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/About">About me</a></li>
+        <li><a routerLink="/contact">Contact me</a></li>
+      </ul>
+    </nav>
+  </div>
 </div>
-
-
