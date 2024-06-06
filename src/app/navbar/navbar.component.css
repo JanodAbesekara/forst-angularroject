@@ -1,1 +1,83 @@
 
+<<<<<<< Updated upstream
+=======
+
+
+@media (min-width: 630px) {
+
+  
+  ul {
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    float: inline-end;
+    list-style: none;
+    padding-right: 15px;
+  }
+
+  li {
+    padding-left: 15px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(11, 105, 182, 0.222);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+
+  li a:hover {
+    background-color: rgba(11, 105, 182, 0.5);
+  }
+
+  #nh1 {
+    width: 100%;
+    background-color: blue;
+    height: 80px;
+    color: white;
+  }
+
+  mat-icon {
+    display: none;
+  }
+}
+
+/* Add media query to resize and control visibility */
+@media (max-width: 630px) {
+  #nh1 {
+    width: 100%;
+    background-color: blue;
+    height: 150px;
+    color: white;
+  }
+
+  ul {
+    display: none;
+    position: relative;
+    bottom: 80px;
+  }
+
+  ul.visible {
+    display: block;
+    visibility: visible;
+  }
+
+  li {
+    padding-right: 0px;
+    padding: 5px 10px;
+  }
+
+  li a {
+    padding: 5px 5px;
+  }
+
+  mat-icon {
+    float: right;
+    position: relative;
+    bottom: 70px;
+    right: 10px;
+  }
+}
+>>>>>>> Stashed changes
