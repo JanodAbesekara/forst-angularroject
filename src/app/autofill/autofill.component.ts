@@ -8,12 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './autofill.component.css',
 })
 export class AutofillComponent implements OnInit {
-  fullText: string = 'Janod  Abesekara';
+  texts: string[] = ['Web Developer', 'Mobile App Developer','UI/UX Designer'];
+  fullText: string = '';
   displayedText: string = '';
   currentIndex: number = 0;
+  textArrayIndex: number = 0;
 
   ngOnInit(): void {
-    this.startAutoFill();
+    this.setNextText();
+  }
+
+  setNextText(): void {
+    if (this.textArrayIndex < this.texts.length) {
+      this.fullText = this.texts[this.textArrayIndex];
+      this.displayedText = '';
+      this.currentIndex = 0;
+      this.startAutoFill();
+      this.textArrayIndex++;
+    } else {
+      this.textArrayIndex = 0; // Reset to cycle through the texts again
+      this.setNextText();
+    }
   }
 
   startAutoFill(): void {
@@ -23,6 +38,7 @@ export class AutofillComponent implements OnInit {
         this.currentIndex++;
       } else {
         clearInterval(interval);
+        setTimeout(() => this.setNextText(), 2000); // Adjust the delay before starting the next text
       }
     }, 150); // Adjust the speed by changing the interval (in milliseconds)
   }

@@ -1,5 +1,9 @@
-.fs-4 {
-  font-size: 2.5rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+
+.Dis{
+  font-size: 2.4rem;
+  font-family: 'Times New Roman', serif;
+  color: #033d3a;
   font-weight: 600;
 }
