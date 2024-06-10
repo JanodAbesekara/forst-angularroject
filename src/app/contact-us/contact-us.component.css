@@ -1,3 +1,36 @@
 p{
   margin-top: 100px;
 }
+
+.Icon{
+  position: fixed;
+  top: 300px;
+}
+
+.Icon ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.Icon ul li{
+  padding-top: 10px;
+}
+
+.Icon ul li a{
+  display: block;
+  cursor: pointer;
+}
+
+.Icon ul li a img:hover{
+  width: 60px;
+  height: 60px;
+}
+
+.mail{
+  width: 200px;
+  position: relative;
+  left: 50px;
+}
