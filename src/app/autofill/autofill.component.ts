@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './autofill.component.css',
 })
 export class AutofillComponent implements OnInit {
-  texts: string[] = ['Web Developer', 'Mobile App Developer','UI/UX Designer'];
+  texts: string[] = ['Full Stack Developer', 'Mobile App Developer','UI/UX Designer'];
   fullText: string = '';
   displayedText: string = '';
   currentIndex: number = 0;
